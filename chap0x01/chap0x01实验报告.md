@@ -73,7 +73,7 @@
 
    - 网关 `gateway` 网卡配置情况：
 
-     ![gateway_adapter](./img/gateway_adapter.png)`NAT` 用来连接互联网， `Host-Only` 网卡用来方便宿主机 `SSH` 远程登录， 两个 `内部网络` 网卡用来连接拓扑图中的两个内网。
+     ![gateway_adapter](./img/gateway_adapter.png)`NAT` 网络用来连接互联网， `Host-Only` 网卡用来方便宿主机 `SSH` 远程登录， 两个 `内部网络` 网卡用来连接拓扑图中的两个内网。
 
    - 受害者网卡配置情况：
 
