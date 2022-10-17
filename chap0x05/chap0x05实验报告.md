@@ -15,13 +15,13 @@
 
 
 - [x] 禁止探测互联网上的 IP ，严格遵守网络安全相关法律法规
-- [ ] 完成以下扫描技术的编程实现
-  - [ ] TCP connect scan / TCP stealth scan
-  - [ ] TCP Xmas scan / TCP fin scan / TCP null scan
-  - [ ] UDP scan
+- [x] 完成以下扫描技术的编程实现
+  - [x] TCP connect scan / TCP stealth scan
+  - [x] TCP Xmas scan / TCP fin scan / TCP null scan
+  - [x] UDP scan
 - [ ] 上述每种扫描技术的实现测试均需要测试端口状态为：`开放`、`关闭` 和 `过滤` 状态时的程序执行结果
-- [ ] 提供每一次扫描测试的抓包结果并分析与课本中的扫描方法原理是否相符？如果不同，试分析原因；
-- [ ] 在实验报告中详细说明实验网络环境拓扑、被测试 IP 的端口状态是如何模拟的
+- [x] 提供每一次扫描测试的抓包结果并分析与课本中的扫描方法原理是否相符？如果不同，试分析原因；
+- [x] 在实验报告中详细说明实验网络环境拓扑、被测试 IP 的端口状态是如何模拟的
 - [ ] （可选）复刻 `nmap` 的上述扫描技术实现的命令行参数开关
 
 
@@ -101,7 +101,24 @@ python: 3.10.5
 
 ## 实验过程
 
+- 端口开放、关闭、过滤方法
 
+  - 开放端口
+
+    ```bash
+    sudo nc -l -p xxxx
+    ```
+
+  - 关闭端口
+
+    终止开放端口指令的执行
+
+  - 过滤
+
+    ```bash
+    sudo ufw enable
+    sudo ufw deny xxxx
+    ```
 
 - TCP connect scan
 
